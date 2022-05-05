@@ -63,3 +63,7 @@ strictNullChecks: true        [不允许出现null、undefined类型]
 ## 11、对于类型，始终使用小写
 string、number、boolean
 特殊的内置类型：Date 可以大写
+
+## 12、数组的定义方法有两种
+> 1. type[]       []前面加一个ts常用的类型
+> 2. Array<type>  关键字<ts的常用类型> （泛型的写法）
