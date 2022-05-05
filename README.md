@@ -51,3 +51,15 @@ strictNullChecks: true        [不允许出现null、undefined类型]
 // "strictNullChecks": true,                         /* When type checking, take into account `null` and `undefined`. */
 ```
 
+## 10、为了演示方便，修改入口和出口
+修改成当前文件夹下的 src、dist 文件夹
+```json
+/* Modules */
+"rootDir": "./src", 
+/* Emit */
+"outDir": "./dist",
+```
+
+## 11、对于类型，始终使用小写
+string、number、boolean
+特殊的内置类型：Date 可以大写
