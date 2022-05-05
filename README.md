@@ -32,10 +32,22 @@ ts很多情况下会帮助我们自动推断类型，当类型系统能够帮我
 ## 7、编译生成后的js文件会翻译成浏览器识别的代码
 在ts里加了很多类型注释的代码，都会在编译的时候自动删除掉。
 
-# es6的语法并不是所有浏览器都支持
+# 8、es6的语法并不是所有浏览器都支持
 修改配置文件 tsconfig.json 
 ```json
 /* Language and Environment */
 "target": "es2016", 
 // 默认以 ES3 作为目标，但是大多数浏览器都支持 ES2015（es6），可以很安全地将更高的版本设置为目标。
 ```
+
+## 9、严格模式
+类型是可选的，推理采用最宽松的类型，而且不检查潜在的null、undefined，应该始终打开这些严格检查。
+noImplicitAny: true           [不允许出现隐式的any类型]
+strictNullChecks: true        [不允许出现null、undefined类型]
+```json
+/* Type Checking */
+"strict": true,                                      /* Enable all strict type-checking options. */
+// "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied `any` type.. */
+// "strictNullChecks": true,                         /* When type checking, take into account `null` and `undefined`. */
+```
+
