@@ -119,3 +119,7 @@ string、number、boolean
 ## 21、文字类型
 
 除了一般类型 string 和 number，我们可以在类型的位置引用特定的字符串和数字。比如 var、let、const。去细化变量类型的时候很用用。
+
+## 22、null 和 undefined 类型
+
+js 有两个原始的值：null 和 undefined，分别表示不存在和未初始化的值，ts 有两个对应的同名类型。
