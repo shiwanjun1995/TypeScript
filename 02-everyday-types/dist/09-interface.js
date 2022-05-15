@@ -1,9 +1,8 @@
 "use strict";
-function printPoint(pt) {
-}
+function printPoint(pt) { }
 printPoint({
     x: 100,
-    y: 100
+    y: 100,
 });
 // 类型别名和接口是很类似的，几乎所有可以使用 interface 定义的这种类型都可以通过 type 这种来定义
 // // 扩展接口

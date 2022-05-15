@@ -1,14 +1,13 @@
+// 关键字 interface 后面跟着一个类型的名字，然后直接一个对象就可以了
 interface Point {
-  x: number,
+  x: number
   y: number
 }
 
-function printPoint(pt: Point) {
-
-}
+function printPoint(pt: Point) {}
 printPoint({
   x: 100,
-  y: 100
+  y: 100,
 })
 
 // 类型别名和接口是很类似的，几乎所有可以使用 interface 定义的这种类型都可以通过 type 这种来定义
@@ -55,7 +54,6 @@ printPoint({
 //   count: 100
 // }
 
-
 // 类型创建以后不能进行扩展 type
 // type MyWindow = {
 //   title: string
@@ -63,4 +61,3 @@ printPoint({
 // type MyWindow = {
 //   count: number
 // }
-
