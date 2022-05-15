@@ -10,9 +10,8 @@ printCoord({
 });
 // last可选，后面加上?
 function printName(obj) {
-    var _a;
     // 可选链式编程
-    console.log((_a = obj.last) === null || _a === void 0 ? void 0 : _a.toUpperCase());
+    console.log(obj.last?.toUpperCase());
     if (obj.last !== undefined) {
         console.log(obj.last.toLocaleLowerCase());
     }
